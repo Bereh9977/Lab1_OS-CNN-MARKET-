@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="cnn_logo.png" width="50px" height="50px" alt="CNN photo">
+            Онлайн магазин нейромереж
+        </h1>
+    </header>
+    <nav>
+        <li>
+            <a href="index.html"> Головна сторінка</a>
+        </li>
+    </nav>
+    <main>
+        <h2>Форма зворотнього зв'язку</h2>
+        <form>
+            <fieldset>
+                <fieldset>
+                    <legend>Персональна інформація</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value="Your name">
+
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" value="Your last name"> <br>
+
+                    <label for="email"> Email</label>
+                    <input type="email" id="email" name="email" value="Your email">
+                
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age"> <br>
+
+                    <label for="education">Тип освіти</label> <br>
+                    <input type="radio" id="education" name="education">          
+                    <label for="education">повна</label> <br>   
+        
+                    <input type="radio" id="education" name="education" >          
+                    <label for="education">не повна</label> <br>   
+
+                    <input type="radio" id="education" name="education">            
+                    <label for="education">вища</label> <br>      
+
+                    <input type="radio" id="education" name="education">          
+                    <label for="education">професійна</label> <br>    
+                </fieldset>  
+                  
+                <label for="type_request">Оберіть причину звернення:</label>
+                <select name="type_request" id="type_request">
+                    <option value="cooperation">Співпраця</option>
+                    <option value="copyright_violation">Скарга на порушення права власності</option>
+                    <option value="suggest" selected>Пропозиція</option>
+                    <option value="error_report">Наявність помилки</option>
+                </select>
+
+                <p><b>Додаткова інформація</b></p>
+
+                <textarea name="feedback" id="feedback" cols="30" rows="5" maxlength="500"></textarea> <br>
+                
+                <input type="checkbox" id="accept_data" name="accept_data" required>
+                <label for="accept_data"> Згода на обробку даних</label> <br>
+
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Відмінити">
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+<footer>
+    <article>
+        <section class="shop_info">
+            <h2>Про нас!</h2>
+            <ol>
+                <li>Номери телефонів:</li>
+                <ul>
+                    <li>+380967843245</li>
+                    <li>+380967843246</li>
+                    <li>+380967843247</li>
+                </ul>
+                <li>Адреси:</li>
+                <ul>
+                    <li><u>м. Київ, вул. Богдана Хмельницького 46</u></li>
+                    <li><u>м. Біла Церква, вул. Лермонтова 26</u></li>
+                </ul>
+            </ol>
+        </section>
+    </article>
+</footer>
+</html>
