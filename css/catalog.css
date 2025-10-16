@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.logo {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+}
+
+div {
+    border-color: darkgreen;
+    border-width: 2px;
+    border-style: dotted solid solid solid;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px gray inset;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: x-large;
+    font-style: italic;
+}
+
+div img {
+    transition: filter 0.4s;
+}
+
+div img:hover {
+    filter: grayscale(80%) sepia(50%) contrast(0.8);
+}
+
+#navigation a:visited {
+    color: #006400;
+}
+
+.shop_info {
+    background-color: hsl(34, 57%, 70%);
+    transition: all 0.2s ease 2s;
+}
+
+.shop_info:hover {
+    font-weight: 600;
+    background-color: hsl(34, 67%, 70%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > div {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 10px;
+    align-content: start;
+}
+
+main > div img {
+    justify-self: center;
+}
+
+main > div ul {
+    list-style: none;
+}

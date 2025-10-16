@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.purpose {
+    margin: 30px;
+}
+
+.table_info {
+    transition: transform 0.2s;
+}
+
+.table_info:hover {
+    transform: translateY(-2%);
+}
+
+.shop_info {
+    background-color: hsl(34, 57%, 70%);
+    transition: all 0.2s ease 2s;
+}
+
+.shop_info:hover {
+    font-weight: 600;
+    background-color: hsl(34, 67%, 70%);
+}
+
+.purpose dl>dd::before {
+    content: "😁";
+}
+
+a:visited {
+    color: #006400;
+}
+
+nav .menu {
+    position: relative;
+    float: left;
+    width: 200px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    z-index: 5;
+}
+
+nav .menu ul {
+    list-style: none;
+}
+
+nav .menu ul li {
+    margin: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 5px auto; 
+    padding: 5px;
+}
+
+main article {
+    grid-column: 1 / 2; 
+}
+
+main aside {
+    grid-column: 2 / 2; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}

@@ -1,0 +1,58 @@
+.logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+input[type]:focus {
+    background-color: darkgray;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    box-shadow: 5px 5px 10px gray;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.shop_info {
+    background-color: hsl(34, 57%, 70%);
+    transition: all 0.2s ease 2s;
+}
+
+.shop_info:hover {
+    font-weight: 600;
+    background-color: hsl(34, 67%, 70%);
+}
