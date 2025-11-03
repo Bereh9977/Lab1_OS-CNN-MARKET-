@@ -49,6 +49,7 @@ div img:hover {
 }
 
 main {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -70,4 +71,26 @@ main > div img {
 
 main > div ul {
     list-style: none;
+}
+
+.newLabel {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+  transform: scaleX(1.2);
+}
+
+.searchContainer{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border-color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: none;
+    box-shadow: none;
+}
+
+.hidden {
+  display: none;
 }
