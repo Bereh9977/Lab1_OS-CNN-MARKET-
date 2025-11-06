@@ -1,0 +1,116 @@
+.items {
+    border-color: darkgreen;
+    border-width: 2px;
+    border-style: dotted solid solid solid;
+    margin: 10px;
+    padding: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.items img {
+    transition: filter 0.4s;
+}
+
+.items img:hover {
+    filter: grayscale(80%) sepia(50%) contrast(0.8);
+}
+
+.mainItems {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f8f8f8; 
+}
+
+.items {
+    background-color: hsl(0, 0%, 98%); 
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.25s ease, border-color 0.25s;
+}
+
+.items:hover {
+    transform: translateY(-3px);
+    border-color: #006400; 
+    box-shadow: 0 4px 10px rgba(0, 100, 0, 0.15);
+}
+
+.items img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    justify-self: center;
+    border-radius: 10px;
+    transition: filter 0.4s, transform 0.3s;
+}
+
+.items img:hover {
+    filter: grayscale(70%) sepia(25%) contrast(0.95);
+    transform: scale(1.03);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.items ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.newLabel {
+    color: #cc0000;
+    font-weight: 700;
+    margin-left: 8px;
+    display: inline-block;
+    transform: scaleX(1.15);
+    letter-spacing: 0.5px;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    outline: none;
+    width: 220px;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+}
+
+.searchContainer input:focus {
+    border-color: #009900;
+}
+
+.hidden {
+  display: none;
+}

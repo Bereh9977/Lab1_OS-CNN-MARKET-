@@ -1,0 +1,77 @@
+input[type]:focus {
+    background-color: darkgray;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    box-shadow: 5px 5px 10px gray;
+}
+
+main:has(.mainForm) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.mainForm {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.textarea-wrapper {
+    position: relative;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    margin-left: 30px;
+    background: #fff3cd;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.textarea-hover {
+    background: #fff8e1;
+    border: 2px solid #000000;
+    transition: all 0.2s ease-in-out;
+}

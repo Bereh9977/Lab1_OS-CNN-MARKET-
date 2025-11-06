@@ -1,0 +1,151 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    z-index: 1;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu ul > li a {
+    font-weight: 500;
+    color: #006400;
+    transition: color 0.3s ease;
+}
+
+.menu ul > li a:hover {
+    color: #009900;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+main article {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.purpose {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.table_info { 
+    transition: transform 0.2s;
+} 
+
+.table_info:hover {
+    transform: translateY(-2%); 
+}
+
+.table_info table {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.table_info th, .table_info td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.table_info thead {
+    background-color: #e8e8e8;
+}
+
+main aside {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.95rem;
+}
+
+main aside h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    background-color: hsl(37, 75%, 87%);
+    padding-top: 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.shop_info h2 {
+    margin-bottom: 10px;
+}
+
+.shop_info ul{
+    list-style-type: none;
+}
+
+.cnnContainer {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fallingCnn {
+    position: absolute;
+}
+
+.menu ul.vertical {
+  flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding: 20px 10px;
+    background-color: #f0f0f0;
+}
+
+.menu ul.vertical > li {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.shifted {
+    margin-left: 220px;
+}
